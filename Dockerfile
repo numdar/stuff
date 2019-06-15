@@ -1,4 +1,4 @@
-FROM linuxserver/nextcloud
+FROM NEXTCLOUD
 
 RUN echo "deb [allow-insecure=yes] http://repo.delellis.com.ar stretch main" > /etc/apt/sources.list.d/20-pdlib.list \
     && apt-get update \
