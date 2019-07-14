@@ -2,4 +2,4 @@ FROM linuxserver/nextcloud
 
 RUN apk add tesseract-ocr
 
-CMD ["/config/live.sh"]
+CMD ["bash /config/live.sh"]
