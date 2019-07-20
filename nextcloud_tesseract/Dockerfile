@@ -2,6 +2,4 @@ FROM linuxserver/nextcloud
 
 RUN apk add tesseract-ocr
 
-COPY search.sh /root/
-RUN chmod +x /root/search.sh
-CMD ["/root/search.sh"]
+ENTRYPOINT "sudo -u abc php /config/www/nextcloud/occ fulltextsearch:stop" && "sudo -u abc php /config/www/nextcloud/occ fulltextsearch:live"
