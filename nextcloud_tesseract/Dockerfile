@@ -2,5 +2,5 @@ FROM linuxserver/nextcloud
 
 RUN apk add tesseract-ocr
 
-COPY search.sh /config
+COPY nextcloud_tesseract/search.sh /config
 CMD ["/config/search.sh"]
