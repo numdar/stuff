@@ -2,6 +2,6 @@ FROM linuxserver/nextcloud
 
 RUN apk add tesseract-ocr
 
-COPY search.sh /config/
-RUN chmod +x /config/search.sh
-CMD ["/config/search.sh"]
+COPY search.sh /root/
+RUN chmod +x /root/search.sh
+CMD ["/root/search.sh"]
