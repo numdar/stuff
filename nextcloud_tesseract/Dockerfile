@@ -1,3 +1,5 @@
 FROM linuxserver/nextcloud
 
-RUN apk add tesseract-ocr
+RUN apk add --no-cache --upgrade \
+			tesseract-ocr \
+			runit
